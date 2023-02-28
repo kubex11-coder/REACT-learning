@@ -1,0 +1,16 @@
+.text-button-changer {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-button-changer h2 {
+  text-align: center;
+  color: rgb(38, 49, 45);
+}
+
+.text-button-changer button {
+  background-color: aqua;
+  color: black;
+  margin: 10px;
+  padding: 10px 15px;
+}/*# sourceMappingURL=Example.css.map */
