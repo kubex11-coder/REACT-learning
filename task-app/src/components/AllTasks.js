@@ -3,36 +3,36 @@ import data from "../data"
 import { useState } from "react"
 
 const AllTasks = () => {
-    const [myTask, setMyTask] = useState(data)
+    const [myData, setMyData] = useState(data)
 
-    const tasksHandler = (idecko) => {
-        const filteredTasks = myTask.filter((oneTask) => {
-            return oneTask.id !== idecko
+    const deleteHandler = (idecko) => {
+        const filteredTasks = myData.filter((oneData) => {
+            return idecko !== oneData.id
         })
 
-        setMyTask(filteredTasks)
+        setMyData(filteredTasks)
     }
 
-    const allDeleteHandler = () => {
-        setMyTask([])
+    const deleteAllHandler = () => {
+        setMyData([])
     }
 
     return (
         <div>
-            {myTask.map((oneTask) => {
-                const { id, name } = oneTask
+            {myData.map((oneData) => {
+                const { id, name } = oneData
 
                 return (
                     <div className="one-task" key={id}>
                         <h4>{name}</h4>
-                        <button onClick={() => tasksHandler(id)}>
+                        <button onClick={() => deleteHandler(id)}>
                             Vymazat
                         </button>
                     </div>
                 )
             })}
-            <button className="main-button" onClick={allDeleteHandler}>
-                Vše vymazat
+            <button className="main-button" onClick={deleteAllHandler}>
+                Vymazat vše
             </button>
         </div>
     )

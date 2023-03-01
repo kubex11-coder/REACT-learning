@@ -4,6 +4,8 @@ const data = [
     { id: 3, name: "Zajít do fitka" },
     { id: 4, name: "Nakoupit" },
     { id: 5, name: "Nakrmit kočku" },
+    { id: 6, name: "Nakrmit psa" },
+    { id: 7, name: "Nakrmit ženu" },
 ]
 
 export default data
