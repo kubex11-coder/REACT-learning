@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.counter {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 62, 43);
+}
+
+.counter h1 {
+    color: white;
+    font-size: 45px;
+}
+.counter h2 {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: rgb(3, 49, 49);
+    color: aliceblue;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    min-width: 300px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    color: rgb(3, 49, 49);
+    background-color: aliceblue;
+}
