@@ -5,7 +5,7 @@ const Question = ({ title, info }) => {
     const [show, setShow] = useState(false)
 
     return (
-        <div>
+        <div className="one-question">
             <section>
                 <h2>{title}</h2>
                 <button onClick={() => setShow(!show)}>Odpověď</button>
