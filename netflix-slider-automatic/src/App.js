@@ -1,7 +1,8 @@
 import "./index.css"
+import OneMovieSlider from "./components/OneMovieSlider"
 
 const App = () => {
-    return <h1>testtt</h1>
+    return <OneMovieSlider />
 }
 
 export default App
