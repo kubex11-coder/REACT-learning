@@ -1,7 +1,12 @@
 import "./index.css"
+import OneMovieSlider from "./components/OneMovieSlider"
 
 const App = () => {
-    return <h1>testtex</h1>
+    return (
+        <div className="slider">
+            <OneMovieSlider />
+        </div>
+    )
 }
 
 export default App
